@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0; }
 
-.navbar {
+.Header {
   width: 100%; }
 
 .bare1 {
@@ -93,3 +93,73 @@
     flex-direction: column-reverse; }
   .img-doc {
     width: 100%; } }
+
+#prot {
+  padding-top: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  #prot h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #0663bb; }
+  #prot .Protege {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%); }
+    #prot .Protege .card {
+      padding: 3em; }
+      #prot .Protege .card__img {
+        text-align: center;
+        padding-right: 1em;
+        padding-bottom: 1em; }
+        #prot .Protege .card__img img {
+          width: 150px; }
+      #prot .Protege .card__para {
+        font-size: 1.6em;
+        font-weight: bold;
+        color: #0663bb;
+        text-align: center; }
+  #prot .card-S {
+    text-align: center; }
+    #prot .card-S__img {
+      text-align: center;
+      padding-right: 1em;
+      padding-bottom: 1em; }
+      #prot .card-S__img img {
+        width: 150px; }
+    #prot .card-S__para {
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #0663bb;
+      text-align: center; }
+
+@media only screen and (max-width: 800px) {
+  #prot h1 {
+    font-size: 1.6em; }
+  #prot .Protege {
+    display: grid;
+    grid-template-columns: repeat(2, 50%); }
+    #prot .Protege .card {
+      padding: 3em; }
+      #prot .Protege .card__img {
+        text-align: center;
+        padding-right: 1em;
+        padding-bottom: 1em; }
+        #prot .Protege .card__img img {
+          width: 80px; }
+      #prot .Protege .card__para {
+        font-size: 1em;
+        font-weight: bold;
+        color: #0663bb;
+        text-align: center; }
+  #prot .card-S {
+    text-align: center; }
+    #prot .card-S__img {
+      text-align: center;
+      padding-right: 1em;
+      padding-bottom: 1em; }
+      #prot .card-S__img img {
+        width: 80px; }
+    #prot .card-S__para {
+      font-size: 1em;
+      font-weight: bold;
+      color: #0663bb;
+      text-align: center; } }
