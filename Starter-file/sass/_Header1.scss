@@ -86,26 +86,23 @@ font-family: fantasy;
 }
 
 .btn1 {
-    width: 70%;
-    margin-top: 2%;
-    background: #1078AD;
-    padding: 1%;
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 700;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    &:hover {
-        background-color: rgb(131, 202, 238);
-        border-radius: 20px;
+    padding: 1em 11em;
+    font-weight:bold;
+        margin-top: 2em;
+        cursor: pointer;
+        background-color: #cfe4ef;
+        border: solid 2px #1078ad;
+        color: #1078ad;
+        border-radius: 0.6em;
+        &:hover {
+            background-color: #1078ad;
+            color: white;
         
       }
 }
 .img-doc {
     width: 45vw;
-    
-    
+       
 }
 
 @media only screen and (max-width: 600px){
