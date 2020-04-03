@@ -22,7 +22,9 @@
   font-family: fantasy; }
   .bare1 ul li a {
     text-decoration: none;
-    margin: 2em; }
+    margin: 2em;
+    font-size: 1.2em;
+    font-weight: bold; }
 
 .bare2 {
   background: #F4CF1B;
@@ -103,15 +105,19 @@
 .symptome main {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  padding: 3em; }
+  padding: 2em; }
   .symptome main .photo {
     text-align: center;
     padding: 2em; }
     .symptome main .photo__img {
       padding-bottom: 1em; }
+      .symptome main .photo__img--img1 {
+        width: 3.6em;
+        padding-bottom: .3em; }
     .symptome main .photo__text {
       color: #1078ad;
-      font-weight: 3em; }
+      font-size: 1.6em;
+      font-weight: bold; }
 
 .recomndation {
   background-color: #1078ad;
@@ -120,22 +126,27 @@
     text-align: center;
     color: white;
     padding-top: 1em;
-    padding-bottom: 2em; }
+    padding-bottom: 1em;
+    font-size: 2.5em; }
   .recomndation main {
     display: grid;
     grid-template-columns: repeat(2, 50%); }
     .recomndation main .infList {
-      padding-left: 6em;
+      padding-left: 5em;
       color: white; }
       .recomndation main .infList__par {
         text-align: center;
-        padding-bottom: 1em; }
+        padding-bottom: 1em;
+        font-size: 2em; }
       .recomndation main .infList__list {
         list-style: none; }
         .recomndation main .infList__list li {
           margin: 1em 0; }
+          .recomndation main .infList__list li span {
+            color: orange; }
     .recomndation main .call {
-      text-align: center; }
+      text-align: center;
+      margin-left: 8em; }
       .recomndation main .call h3 {
         color: #f4cf1b; }
       .recomndation main .call .num-phone {
@@ -300,3 +311,43 @@
       font-weight: bold;
       color: #0663bb;
       text-align: center; } }
+
+#in {
+  padding-top: 6em; }
+
+.info {
+  background-color: #D0E5F0;
+  text-align: center; }
+  .info .text {
+    font-family: sans-serif;
+    padding-top: 2em;
+    font-family: 'Cairo', sans-serif !important; }
+    .info .text h2 {
+      line-height: 2em;
+      font-size: 3em;
+      color: #4d92e0; }
+    .info .text p {
+      color: #0663bb;
+      font-size: 2em;
+      font-weight: 400; }
+  .info a {
+    line-height: 5em;
+    background-color: #588cc7;
+    width: 23%;
+    margin-top: 3%;
+    padding: .9%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: .2em;
+    border: darkblue;
+    cursor: pointer;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 3%;
+    text-decoration: none; }
+
+@media only screen and (max-width: 600px) {
+  .text {
+    font-size: 60%;
+    margin-left: 10%;
+    margin-right: 10%; } }
