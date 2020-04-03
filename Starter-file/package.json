@@ -15,7 +15,7 @@
     "watch-dev": "node-sass sass/main.scss dist/css/style.prefix.css -w",
     "start:dev": "concurrently  \"npm run server:prod\" \"npm run watch-dev\"",
     "compiler:sass": "node-sass sass/main.scss dist/css/style.comp.css -w",
-    "concat:css": "concat -o dist/css/style.concat.css dist/css/all.css dist/css/style.comp.css",
+    "concat:css": "concat -o dist/css/style.concat.css  dist/css/style.comp.css",
     "prefix:css": "postcss dist/css/style.concat.css --use autoprefixer -o dist/css/style.prefix.css",
     "building-dev": "npm-run-all compiler:sass concat:css prefix:css",
     "fin-dev": "==============Branch dev=============="
