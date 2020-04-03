@@ -62,19 +62,17 @@
     font-family: 'Cairo', sans-serif !important; }
 
 .btn1 {
-  width: 70%;
-  margin-top: 2%;
-  background: #1078AD;
-  padding: 1%;
-  color: white;
-  font-size: 1.3rem;
-  font-weight: 700;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer; }
+  padding: 1em 11em;
+  font-weight: bold;
+  margin-top: 2em;
+  cursor: pointer;
+  background-color: #cfe4ef;
+  border: solid 2px #1078ad;
+  color: #1078ad;
+  border-radius: 0.6em; }
   .btn1:hover {
-    background-color: #83caee;
-    border-radius: 20px; }
+    background-color: #1078ad;
+    color: white; }
 
 .img-doc {
   width: 45vw; }
@@ -93,6 +91,145 @@
     flex-direction: column-reverse; }
   .img-doc {
     width: 100%; } }
+
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.symptome h2 {
+  text-align: center;
+  color: #1078ad;
+  padding-top: 2em; }
+
+.symptome main {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding: 3em; }
+  .symptome main .photo {
+    text-align: center;
+    padding: 2em; }
+    .symptome main .photo__img {
+      padding-bottom: 1em; }
+    .symptome main .photo__text {
+      color: #1078ad;
+      font-weight: 3em; }
+
+.recomndation {
+  background-color: #1078ad;
+  width: 100%; }
+  .recomndation h2 {
+    text-align: center;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 2em; }
+  .recomndation main {
+    display: grid;
+    grid-template-columns: repeat(2, 50%); }
+    .recomndation main .infList {
+      padding-left: 6em;
+      color: white; }
+      .recomndation main .infList__par {
+        text-align: center;
+        padding-bottom: 1em; }
+      .recomndation main .infList__list {
+        list-style: none; }
+        .recomndation main .infList__list li {
+          margin: 1em 0; }
+    .recomndation main .call {
+      text-align: center; }
+      .recomndation main .call h3 {
+        color: #f4cf1b; }
+      .recomndation main .call .num-phone {
+        background-color: #f4cf1b;
+        margin: 1em;
+        position: relative;
+        width: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1em 2em;
+        border-radius: 1em;
+        color: #1078ad; }
+
+@media only screen and (max-width: 600px) {
+  .recomndation main {
+    display: grid;
+    grid-template-columns: repeat(1, 100%); }
+    .recomndation main .infList {
+      padding-left: 3em;
+      color: white; }
+      .recomndation main .infList__par {
+        text-align: center;
+        padding-bottom: 1em; }
+      .recomndation main .infList__list {
+        list-style: none; }
+        .recomndation main .infList__list li {
+          margin: 1em 0; }
+    .recomndation main .call {
+      text-align: center; }
+      .recomndation main .call h3 {
+        color: #f4cf1b; }
+      .recomndation main .call .num-phone {
+        background-color: #f4cf1b;
+        margin: 1em 0;
+        position: relative;
+        width: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1em 2em;
+        border-radius: 1em;
+        color: #1078ad; } }
+
+.nav-test {
+  background-color: #96c5dc;
+  text-align: center;
+  padding: 2em; }
+  .nav-test h2 {
+    color: #1078ad; }
+  .nav-test button {
+    padding: 1em 11em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2em;
+    background-color: #cfe4ef;
+    border: solid 2px #1078ad;
+    color: #1078ad;
+    border-radius: 0.6em; }
+    .nav-test button:hover {
+      background-color: #1078ad;
+      color: white; }
+
+.footer {
+  padding-top: 2em; }
+  .footer h2 {
+    text-align: center;
+    color: #1078ad; }
+  .footer .first-tap {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin: 3em 0; }
+    .footer .first-tap .inf-contact {
+      text-align: center; }
+      .footer .first-tap .inf-contact h3 {
+        color: #1078ad;
+        margin-bottom: 1em; }
+      .footer .first-tap .inf-contact .inf-nmr {
+        margin-bottom: .5em; }
+      .footer .first-tap .inf-contact .nmr {
+        color: #22ff22;
+        margin-bottom: .5em; }
+    .footer .first-tap .ret {
+      text-align: center;
+      padding-top: 2em; }
+      .footer .first-tap .ret ul {
+        list-style: none; }
+        .footer .first-tap .ret ul li {
+          padding: 1em 0;
+          border-bottom: solid #1078ad;
+          margin: 0 9em; }
+  .footer .last-tap {
+    background-color: #1078ad;
+    width: 100%;
+    height: 1em;
+    margin-top: 1em; }
 
 #prot {
   padding-top: 2em;
