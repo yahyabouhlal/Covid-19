@@ -1,0 +1,147 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.symptome{
+    h2{
+        text-align: center;
+        color:#1078ad;
+        padding-top: 2em;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(2 , 50%);
+        padding: 3em;
+        
+        .photo{
+            text-align: center;
+            padding: 2em;
+            &__img{
+                padding-bottom:1em ;
+            }
+
+            &__text{
+                color: #1078ad;
+                font-weight: 3em;
+            }
+            
+        }
+
+    }
+}
+
+.recomndation {
+    background-color: #1078ad;
+    width: 100%;
+    h2 {
+        text-align: center;
+        color: white;
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+
+        .infList {
+            padding-left: 6em;
+            color: white;
+            &__par {
+                text-align: center;
+                padding-bottom: 1em;
+            }
+            &__list {
+                list-style: none;
+
+                li {
+                    margin: 1em 0;
+                }
+            }
+        }
+
+        .call {
+            text-align: center;
+            h3 {
+                color: #f4cf1b;
+            }
+            .num-phone {
+                background-color: #f4cf1b;
+                margin: 1em;
+                position: relative;
+                width: 20%;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 1em 2em;
+                border-radius: 1em;
+                color: #1078ad;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .recomndation {
+        main {
+            display: grid;
+            grid-template-columns: repeat(1, 100%);
+            .infList {
+                padding-left: 3em;
+                color: white;
+                &__par {
+                    text-align: center;
+                    padding-bottom: 1em;
+                }
+                &__list {
+                    list-style: none;
+
+                    li {
+                        margin: 1em 0;
+                    }
+                }
+            }
+
+            .call {
+                text-align: center;
+                h3 {
+                    color: #f4cf1b;
+                }
+                .num-phone {
+                    background-color: #f4cf1b;
+                    margin: 1em 0;
+                    position: relative;
+                    width: 20%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding: 1em 2em;
+                    border-radius: 1em;
+                    color: #1078ad;
+                }
+            }
+        }
+    }
+}
+
+.nav-test{
+    background-color: #96c5dc;
+    text-align: center;
+    padding: 2em;
+    h2{
+        color:#1078ad;
+    }
+    button {
+        padding: 1em 11em;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 2em;
+        background-color: #cfe4ef;
+        border: solid 2px #1078ad;
+        color: #1078ad;
+        border-radius: 0.6em;
+        &:hover {
+            background-color: #1078ad;
+            color: white;
+        }
+    }
+}
