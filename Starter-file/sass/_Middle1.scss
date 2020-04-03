@@ -12,18 +12,23 @@
     main{
         display: grid;
         grid-template-columns: repeat(2 , 50%);
-        padding: 3em;
+        padding: 2em;
         
         .photo{
             text-align: center;
             padding: 2em;
             &__img{
                 padding-bottom:1em ;
+                &--img1{
+                    width: 3.6em;
+                    padding-bottom: .3em;
+                }
             }
 
             &__text{
                 color: #1078ad;
-                font-weight: 3em;
+                font-size: 1.6em;
+                font-weight: bold;
             }
             
         }
@@ -38,7 +43,8 @@
         text-align: center;
         color: white;
         padding-top: 1em;
-        padding-bottom: 2em;
+        padding-bottom: 1em;
+        font-size: 2.5em;
     }
 
     main {
@@ -46,25 +52,32 @@
         grid-template-columns: repeat(2, 50%);
 
         .infList {
-            padding-left: 6em;
+            padding-left: 5em;
             color: white;
+            
             &__par {
                 text-align: center;
                 padding-bottom: 1em;
+                font-size: 2em;
             }
             &__list {
                 list-style: none;
 
                 li {
                     margin: 1em 0;
+                    span{
+                        color: orange;
+                    }
                 }
             }
         }
 
         .call {
             text-align: center;
+            margin-left: 8em;
             h3 {
                 color: #f4cf1b;
+                
             }
             .num-phone {
                 background-color: #f4cf1b;
