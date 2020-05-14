@@ -112,16 +112,20 @@ btnResule.addEventListener("click", () => {
     if(stockResult.length === questionnes.length){
         resultFinal.innerHTML = 'Nous vous conseillons de rester à votre domicile et de contacter votre médecin' +
                 ' en cas d’apparition de nouveaux symptômes. Vous pourrez aussi utiliser à nouv' +
-                'eau l’application pour réévaluer vos symptômes'
-        
-        
+                'eau l’application pour réévaluer vos symptômes';
+        resultFinal.style.fontWeight = 'bold';
+        resultFinal.style.color = '#ff0000';
         // resultFinal.innerHTML = `<div>machi korona</div>`
     }else if(stockResult.length >= questionnes.length/2){
         resultFinal.innerHTML = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
         'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
+        resultFinal.style.fontWeight = 'bold';
+        resultFinal.style.color = '#ff0000';
     }else if(stockResult.length < questionnes.length/2){
         resultFinal.innerHTML = 'Votre situation ne relève probablement pas du Covid-19.' +
         'N’hésitez pas à contacter votre médecin en cas de doute.' + 'Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation.' + 'Pour toute information concernant le Covid-19 allez vers la page d’accueil.'
+        resultFinal.style.fontWeight = 'bold';
+        resultFinal.style.color = '#369D53';
     }
 });
 
