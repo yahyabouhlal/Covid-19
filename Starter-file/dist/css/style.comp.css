@@ -449,6 +449,19 @@
       background-color: #1078ad;
       color: white; }
 
+.btnResule .rslBtn {
+  border: solid 2px #1078ad;
+  border-radius: 10px;
+  background-color: #cfe4ef;
+  padding: .7em 3em;
+  color: #1078ad;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+  .btnResule .rslBtn:hover {
+    background-color: #1078ad;
+    color: white; }
+
 .remove {
   display: none; }
 
