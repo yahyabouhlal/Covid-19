@@ -415,7 +415,7 @@
       padding: 2em 2em;
       background-color: white;
       border: solid 2px #1078ad; }
-      .test .questionnes .choix:hover {
+      .test .questionnes .choix:active {
         color: yellow;
         background-color: #1078ad; }
     .test .questionnes p {
