@@ -11,6 +11,7 @@ const fauxChoix = document.querySelectorAll(".faux");
 const btnResule = document.querySelector(".rslBtn");
 const questionProgres = document.querySelector(".progres");
 const resultFinal = document.querySelector(".Preambule p");
+const btnnext = document.querySelector('btnSteper');
 // const V1 = document.querySelector(".vrais1");
 // const V2 = document.querySelector(".vrais2");
 // const V3 = document.querySelector(".vrais3");
@@ -44,6 +45,7 @@ next.addEventListener("click", () => {
         next.style.display="none";
         precedent.style.display="none";
         btnResule.classList.remove('hide');
+        // btnnext.textContent= 'terminer le test'
     }else {
         questionnes[i].classList.remove('remove');
         questionnes[i - 1].classList.add('remove');
@@ -69,7 +71,7 @@ precedent.addEventListener("click", () => {
 function progress(number) {
     const numberProgres = number + 1;
     questionProgres.innerText = numberProgres;
-    barProgress.style.width = `calc(${numberProgres} * calc(100% / 8))`;
+    barProgress.style.width = `calc(${numberProgres} * calc(100% / 7))`;
 
 }
 
