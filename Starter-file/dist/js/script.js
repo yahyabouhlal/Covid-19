@@ -83,18 +83,10 @@ function showResult() {
     vraisChoix[i].addEventListener("click", () => {
         var rslt = all.push("");
         stockResult.push(rslt);
-        // console.log('jddkjdk')
-        // console.log(i);
-        // console.log(all);
-        // console.log(hdhdhd);
-        // var obj = "ssss";
-        // var newData = [...all, obj];
-        // jjd.push(newData);
-        // console.log(newData);
-        // console.log(jjd);
+        
         console.log(stockResult);
         console.log(rslt);
-        // return newData;
+        
     });
     
 }
